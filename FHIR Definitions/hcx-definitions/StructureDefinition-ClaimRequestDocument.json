@@ -2842,8 +2842,8 @@
         "path": "Composition.type",
         "binding": {
           "strength": "required",
-          "description": "Type of a composition. TODO - Value set of all HCX objects.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/doc-typecodes"
+          "description": "Type of a composition",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-hcx-document-type-codes.html"
         }
       },
       {
@@ -2851,18 +2851,6 @@
         "path": "Composition.section",
         "min": 1,
         "max": "1"
-      },
-      {
-        "id": "Composition.section.code",
-        "path": "Composition.section.code",
-        "binding": {
-          "strength": "required",
-          "description": "TODO - value set listing all HCX eObjects including Claim for this one.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/doc-section-codes"
-        },
-        "fixedCodeableConcept": {
-          "text": "Claim"
-        }
       },
       {
         "id": "Composition.section.entry",
